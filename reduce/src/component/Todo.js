@@ -5,6 +5,7 @@ const Todo = props => {
     <div
       className={`todo${props.data.completed ? " complete" : ""}`}
       onClick={props.toggle}
+      style={{ textDecoration: props.data.completed ? "line-through" : "" }}
     >
       <p>{props.data.item}</p>
     </div>
